@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/pinned_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bottom_curved_header">
+    </View>
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pinned_header"
+        app:layout_constraintBottom_toBottomOf="@id/pinned_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helvetica_neu_bold"
+        android:text="Pinned Notes"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/pinned_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/todayTxt"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:text="Today"
+            android:layout_marginTop="10dp"
+            android:textColor="#333232"
+            android:textSize="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/todayRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/yesterdayTxt"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:text="Yesterday"
+            android:layout_marginTop="10dp"
+            android:textColor="#333232"
+            android:textSize="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yesterdayRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/oldTxt"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helvetica_neu_bold"
+            android:text="Older"
+            android:layout_marginTop="10dp"
+            android:textColor="#333232"
+            android:textSize="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/oldRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include android:id="@+id/default_pinned_layout"
+        layout="@layout/default_pinned_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/pinned_header"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

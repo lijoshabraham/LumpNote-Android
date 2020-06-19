@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/app_theme_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <style name="SearchBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="NotesTitleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHint">@color/notes_title_theme_color</item>
+    </style>
+    <style name="NotesDesciptionTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHint">@color/notes_description_theme_color</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_edge_view</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">#047033</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">#000000</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/alert_dialog</item>
+    </style>
+
+</resources>

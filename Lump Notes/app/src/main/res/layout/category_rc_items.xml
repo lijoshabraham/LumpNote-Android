@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/category_ic_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_view"/>
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@raw/menu"
+        android:layout_marginStart="105dp"/>
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:background="@raw/ping_pong"/>
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxWidth="100dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:lines="1"
+        android:layout_marginTop="60dp"
+        android:text="Heart Green"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp"
+        android:fontFamily="@font/muli_bold" />
+
+</androidx.cardview.widget.CardView>

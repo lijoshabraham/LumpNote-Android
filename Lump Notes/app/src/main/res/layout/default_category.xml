@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/defaultCatgry_ic_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_view"/>
+
+    <Button
+        android:id="@+id/add_category_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/round_plus_button_black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="18dp"
+        android:text="Add category"
+        android:fontFamily="@font/muli_bold"
+        android:textColor="#6B6B6B"/>
+
+</androidx.cardview.widget.CardView>
